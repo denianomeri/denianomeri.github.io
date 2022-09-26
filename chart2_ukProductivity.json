@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "description": "Productivity UK",
 
@@ -14,14 +14,17 @@
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI4.DataHub.GrowthInnovationOutputperHour.csv"},
+
   "height": 300,
   "width": 345,
+  
   "mark": {
     "type": "line",
     "point": false,
     "interpolate": "monotone",
     "color": "blueviolet"
   },
+  
   "encoding": {
     "x": {
       "field": "Date",
@@ -30,9 +33,7 @@
         "title": null,
         "grid": false,
         "labelSeparation": 20,
-        "ticks": false
-      }
-    },
+        "ticks": false}},
     "y": {
       "field": "Value",
       "type": "quantitative",
