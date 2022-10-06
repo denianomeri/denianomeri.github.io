@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "IMF exchange rates",
+      "subtitle":"Percent change in exchange rate against U.S. dollar from previous calculation",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+  "data":{"url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/data_IMF_exchangeRates.csv"},
+
+  "height": 300,
+  "width": 300,
+
+  "mark": {
+    "type": "line",
+    "color": "#0d09eb"},
+
+"encoding": {
+     "x": {
+       "field": "Year",
+       "type": "temporal",
+       "axis": {
+         "title": null,
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
+      "y": {
+        "field": "tens",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}}
+}
+}
