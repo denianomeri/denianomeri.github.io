@@ -27,19 +27,21 @@
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
-        <h3></h3>
-        <p></p>
+        <h3>IMF lending</h3>
+        <p>The first chart tracks credit outstanding to all members.</p>
         <div class="chart" id="Chart1"></div>
 
-    
+        <h3>IMF exchange rates</h3>
+        <p>The second chart tracks percentage change in rate against U.S. dollar from previous calculation.</p>
+        <div class="chart" id="Chart2"> </div>
     </div> 
 </body>
 
 
 <script>
     //Define charts:
-    var myChart1 = "data_IMF_exchangeRates.json";
-    var myChart2 = "data_IMF_CreditOutstanding.json";
+    var myChart1 = "data_IMF_creditOutstanding.json";
+    var myChart2 = "data_IMF_exchangeRates.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -47,4 +49,5 @@
 </script>
 
 </html>
+
 
