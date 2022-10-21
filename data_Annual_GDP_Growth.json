@@ -2,13 +2,13 @@
 
   "title": {
       "text": "Annual GDP Growth",
-      "subtitle":"Line graph showing the annual GDP growth rate by year. I chose the site as I am interested in anuual GDP growth trends.",
+      "subtitle":"Line graph showing the annual GDP growth rate by year.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"},
   
-  "data":{"url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/csv%20(1).csv"},
+  "data":{"url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/csv%20(2).csv"},
 
 
   "height": 300,
