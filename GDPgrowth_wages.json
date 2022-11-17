@@ -1,0 +1,56 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Various US measures state by state",
+
+  "title": {
+    "text": "Festival of Economics: Prices and Wages",
+    "subtitle":"Median wage (£)(x), and nominal GDP growth",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {"url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/Prices_wages.csv"},
+
+   
+  "height": 300,
+  "width": 300,
+
+"layer":[{
+
+  "mark": {
+    "type":"circle",
+    "color":"rgb(0,47,167)",
+    "size":100},
+ 
+
+  "encoding": {
+    "x": {
+      "field": "Median annual wage £", 
+      "type": "quantitative",
+      "scale": {"domain": [0, 35000]},
+      "title":null
+      },
+
+    "y": {
+      "field": "Nominal GDP growth (annual %)", 
+      "scale": {"domain": [-10, 8]},
+      "type": "quantitative",
+      "title":null
+      }
+  }},
+
+    {
+      "mark": {"type": "line", "color": "grey"},
+
+      "transform": [{"regression": "Nominal GDP growth (annual %)", "on": "Median annual wage £"}],
+         
+      "encoding": {
+        "x": {"field": "Median annual wage £", "type": "quantitative"},
+        "y": {"field": "Nominal GDP growth (annual %)", "type": "quantitative"}
+      }
+    }
+]
+
+}
