@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -27,29 +27,39 @@
      <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
-        <h3>Bilateral trade</h3>
+        <h3>Week 1: Bilateral trade</h3>
         <p>The first chart tracks trade between the UK and France.</p>
         <div class="chart" id="Chart1"></div>
 
-        <h3>Ozone concentration</h3>
+        <h3>Week 1: Ozone concentration</h3>
         <p>My second chart compares average daily ozone concentration for the UK and Bristol</p>
         <div class="chart" id="Chart2"> </div>
 
-        <h3>IMF lending</h3>
+        <h3>Week 2: IMF lending</h3>
         <p>The first chart tracks credit outstanding to all members. The most risky year is 1984 because the credit outstanding, as a percentage of GDP, is the highest for 1984.</p>
         <div class="chart" id="Chart3"></div>
 
-        <h3>IMF exchange rates</h3>
+        <h3>Week 2: IMF exchange rates</h3>
         <p>The second chart tracks percentage change in rate against U.S. dollar from previous calculation.</p>
         <div class="chart" id="Chart4"> </div>
 
-        <h3>Gilt Strip Yields</h3>
+        <h3>Week 3: Gilt Strip Yields</h3>
         <p>The week 3 chart tracks yields and matruity date. It's better to use a line chart than a bar chart as I have temporal data on x-axis so I changed mark type to line.</p>
         <div class="chart" id="Chart5"> </div>
 
-        <h3>GDP Annual Growth Rate</h3>
+        <h3>Week 4: GDP Annual Growth Rate</h3>
         <p>The week 4 chart tracks annual GDP growth from 1960-2020. I chose this site as I am interested in annual GDP growth trends.</p>
         <div class="chart" id="Chart6"> </div>
+
+        <h3>Project prep: Unemployment rates</h3>
+        <p>The theme for week 5 is UK unemployment</p>
+        <div class="chart" id="Chart7"> </div>
+
+        <h3>Week 8: Festival of Economics</h3>
+        <p>In the Festival of Economics session on prices and wages, an argument was made that wages and GDP growth are positively correlated. Whilst this is what we expect theoretically, in practise there is a very weak negative correlation between the two variables in the UK between 1999-2021.</p>
+        <div class="chart" id="Chart8"> </div>
+
+
     </div> 
 </body>
 
@@ -62,6 +72,8 @@
     var mychart4 = "data_IMF_exchangeRates.json";
     var mychart5 = "data_Guilt_Strip_Yields.json";
     var mychart6 = "data_Annual_GDP_Growth.json";
+    var mychart7 = "unemployment_data_ons-LF2Q (6).json";
+    var mychart8 = "GDPgrowth_wages.json";
 
     
     // Embed charts:
@@ -71,6 +83,8 @@
     vegaEmbed('#Chart4', mychart4);
     vegaEmbed('#Chart5', mychart5);
     vegaEmbed('#Chart6', mychart6);
+    vegaembed('#Chart7', mychart7);
+    vegaembed('#Chart8', mychart8);
 </script>
 
 </html>
