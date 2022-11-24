@@ -1,4 +1,4 @@
-﻿Country Name,Country Code,Indicator Name,Indicator Code,CO2 emissions per capita ,GDP per capita ,Population 2019
+﻿Country_Name,Country Code,Indicator Name,Indicator Code,CO2_emissions_per_capita ,GDP_per_capita ,Population_2019
 Afghanistan,AFG,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,0.159824372,494.1793499,38041757
 Angola,AGO,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,0.792137069,2177.799015,31825299
 Albania,ALB,CO2 emissions (metric tons per capita),EN.ATM.CO2E.PC,1.69224832,5396.215864,2854191
