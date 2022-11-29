@@ -1,0 +1,113 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+
+      "text": "CO2 Emissions vs economic development",
+
+      "subtitle":["GDP per capita (x), CO2 emissions per capita (y). 2019 data","Size of points based on popluation", ""],
+
+      "subtitleFontStyle":"italic",
+
+      "subtitleFontSize":10,
+
+      "anchor": "start",
+
+      "color": "black"
+
+    },
+
+ 
+
+  "config": {
+
+    "background":"white",
+
+    "view": {
+
+      "stroke": "transparent"}},
+
+ 
+
+    "data": {
+
+      "url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/week_9_task1.csv",
+
+      "format":{"type":"csv"}},
+
+ 
+
+    "mark": {
+
+      "type":"circle",
+
+      "color":"blue",
+
+      "opacity":0.7},
+
+   
+
+    "height": 300,
+
+    "width": 300,
+
+ 
+
+    "encoding": {
+
+      "x": {
+
+        "field": "GDP_per_capita ",
+
+        "type": "quantitative",
+
+        "scale": {"domain": [0, 150000]},
+
+        "axis":{"grid": false},
+
+        "title":null},
+
+ 
+
+      "y": {
+
+        "field": "CO2_emissions_per_capita ",
+
+        "type": "quantitative",
+
+        "scale": {"domain": [0, 30]},
+
+        "axis":{"grid": false},
+
+        "title":null},
+
+ 
+
+      "size": {
+
+        "field": "Population_2019",
+
+        "type": "quantitative",
+
+        "title":"Prison Rate",
+
+        "legend":null},
+
+ 
+
+      "tooltip":[
+
+        {"field":"Country_Name", "type": "ordinal", "title":"Country"},
+
+        {"field":"CO2_emissions_per_capita ", "type": "quantitative", "title":"CO2 emissions per capita (metric tonnes)", "format":".0f"},
+
+        {"field":"GDP_per_capita ", "type": "quantitative", "title":"GDP Per Capita (Current US$ Nominal)", "format":".2f"},
+
+        {"field":"Population_2019", "type": "quantitative", "title":"Population", "format":","}
+
+ 
+
+      ]
+
+     }
+
+  }

@@ -1,0 +1,113 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+
+      "text": "Economic deveopment and life expectancy",
+
+      "subtitle":["GDP per capita (x), Life expectancy at birth (years) (y). 2020 data","Size of points based on popluation", ""],
+
+      "subtitleFontStyle":"italic",
+
+      "subtitleFontSize":10,
+
+      "anchor": "start",
+
+      "color": "black"
+
+    },
+
+ 
+
+  "config": {
+
+    "background":"white",
+
+    "view": {
+
+      "stroke": "transparent"}},
+
+ 
+
+    "data": {
+
+      "url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/health_income.csv",
+
+      "format":{"type":"csv"}},
+
+ 
+
+    "mark": {
+
+      "type":"circle",
+
+      "color":"blue",
+
+      "opacity":0.7},
+
+   
+
+    "height": 300,
+
+    "width": 300,
+
+ 
+
+    "encoding": {
+
+      "x": {
+
+        "field": "GDP per capita",
+
+        "type": "quantitative",
+
+        "scale": {"domain": [0, 100000]},
+
+        "axis":{"grid": false},
+
+        "title":null},
+
+ 
+
+      "y": {
+
+        "field": "Life expectancy",
+
+        "type": "quantitative",
+
+        "scale": {"domain": [50, 90]},
+
+        "axis":{"grid": false},
+
+        "title":null},
+
+ 
+
+      "size": {
+
+        "field": "Population_2020",
+
+        "type": "quantitative",
+
+        "title":"Prison Rate",
+
+        "legend":null},
+
+ 
+
+      "tooltip":[
+
+        {"field":"Country Name", "type": "ordinal", "title":"Country"},
+
+        {"field":"Life expectancy", "type": "quantitative", "title":"Life expectancy at birth (total years)", "format":".0f"},
+
+        {"field":"GDP per capita", "type": "quantitative", "title":"GDP Per Capita (Current US$ Nominal)", "format":".2f"},
+
+        {"field":"Population_2020", "type": "quantitative", "title":"Population", "format":","}
+
+ 
+
+      ]
+
+     }
+
+  }

@@ -1,0 +1,56 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Various US measures state by state",
+
+  "title": {
+    "text": "Festival of Economics: Prices and Wages",
+    "subtitle":"Inflation, consumer prices (annnual %)(x), and nominal GDP growth (y)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {"url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/Growth_inflation.csv"},
+
+   
+  "height": 300,
+  "width": 300,
+
+"layer":[{
+
+  "mark": {
+    "type":"circle",
+    "color":"rgb(0,47,167)",
+    "size":100},
+ 
+
+  "encoding": {
+    "x": {
+      "field": "Inflation (%)", 
+      "type": "quantitative",
+      "scale": {"domain": [0, 5]},
+      "title":null
+      },
+
+    "y": {
+      "field": "Nominal GDP growth (annual %)", 
+      "scale": {"domain": [-10, 8]},
+      "type": "quantitative",
+      "title":null
+      }
+  }},
+
+    {
+      "mark": {"type": "line", "color": "grey"},
+
+      "transform": [{"regression": "Nominal GDP growth (annual %)", "on": "Inflation (%)"}],
+         
+      "encoding": {
+        "x": {"field": "Inflation (%)", "type": "quantitative"},
+        "y": {"field": "Nominal GDP growth (annual %)", "type": "quantitative"}
+      }
+    }
+]
+
+}
