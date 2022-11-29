@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: rgb(200, 200, 200);
+}
+   
+h1, h3, p{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.myWeek1{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100, 100, 100);
+}
+
+.chart{
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(10, 38, 247);
+
+
+}
+
+
+#Chart1{
+    border-color:rgb(5, 8, 232);
+}
