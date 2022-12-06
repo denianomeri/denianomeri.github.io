@@ -27,29 +27,51 @@
      <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
-        <h3>Historical Inflation Rate</h3>
+        <h3>Relationship Between Job Vacancy Rate and Real Wage Growth, UK.</h3>
         <p>Content TBC.</p>
         <div class="chart" id="Chart1"></div>
 
+        <h3>Real Wage Growth UK</h3>
+        <p>Content TBC.</p>
+        <div class="chart" id="Chart2"></div>
+
+        <h3>Historical Inflation Rate</h3>
+        <p>Content TBC.</p>
+        <div class="chart" id="Chart3"></div>
+
         <h3>Historical Unemployment Rate (Seasonally Adjusted)</h3>
         <p>Content TBC</p>
-        <div class="chart" id="Chart2"> </div>
+        <div class="chart" id="Chart4"> </div>
 
+        <h3>Vacancy Rate by UK Sector</h3>
+        <p>Content TBC</p>
+        <div class="chart" id="Chart5"> </div>
+
+        <h3>Nominal Wage Growth by UK Sector</h3>
+        <p>Content TBC</p>
+        <div class="chart" id="Chart6"> </div>
     </div> 
 </body>
 
 
 <script>
     //Define charts:
-    var mychart1 = "CPI_inflation_portfolio.json";
-    var mychart2 = "Unemployment_portfolio.json";
-
+    var mychart1 = "headline_chart_project.json";
+    var mychart2 = "project_realwage.json";
+    var mychart3 = "CPI_inflation_portfolio.json";
+    var mychart4 = "Unemployment_portfolio.json";
+    var mychart5 = "project_vacancies_trellis.json";
+    var mychart6 = "project_wages_trellis.json";
 
 
      // Embed charts:
      vegaEmbed('#Chart1', mychart1);
      vegaEmbed('#Chart2', mychart2);
-
+     vegaEmbed('#Chart3', mychart3);
+     vegaEmbed('#Chart4', mychart4);
+     vegaEmbed('#Chart5', mychart5);
+     vegaEmbed('#Chart6', mychart6);
+     
 
 </script>
 
