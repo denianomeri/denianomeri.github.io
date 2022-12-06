@@ -1,0 +1,46 @@
+
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Sugar 4b",
+    "width": 260,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/Book15.csv"
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "nominal",
+        "sort": ["0"],
+        "title": "Year",
+        "axis": {"labelAngle": 60, "labelFontSize":6}
+      }
+    },
+    "layer": [
+      {
+        "mark": {"opacity": 0.5, "type": "bar", "color": "#0c82e3"},
+        "encoding": {
+          "y": {
+            "field": "job_vacancy_rate",
+            "type": "quantitative",
+            "scale": {"domain": [0, 5]},
+            "title": "Job vacancy Ratio Per 100 Employee Jons",
+            "axis": {"titleColor": "#080808"}
+          }
+        }
+      },
+      {
+        "mark": {"stroke": "#adadad", "type": "line", "interpolate": "monotone"},
+        "encoding": {
+          "y": {
+            "field": "real_wage_growth",
+            "type": "quantitative",
+            "title": "Real Wage Growth %",
+            "axis": {"titleColor": "#050505"}
+          }
+        }
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}}
+  }
