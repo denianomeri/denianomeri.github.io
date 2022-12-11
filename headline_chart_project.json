@@ -26,7 +26,7 @@
             "type": "quantitative",
             "scale": {"domain": [0, 5]},
             "title": "Job vacancy Ratio Per 100 Employee Jons",
-            "axis": {"titleColor": "#080808"}
+            "axis": {"titleColor": "#0c82e3"}
           }
         }
       },
@@ -37,7 +37,8 @@
             "field": "real_wage_growth",
             "type": "quantitative",
             "title": "Real Wage Growth %",
-            "axis": {"titleColor": "#050505"}
+            "axis": {"titleColor": "#adadad"}
+           
           }
         }
       }
