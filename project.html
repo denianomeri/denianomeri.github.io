@@ -25,31 +25,50 @@
 <body>
      <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
      <div class="myWeek1">
-        <h1>Data Science for Economists.</h1>
+        <h1>Bargaining Strength of Employees in the UK</h1>
+
+        <h3>Project Aim</h3>
+        <p>Many economists believe wage growth is positively correlated with the job vacancy rate and negatively correlated with unemployment rate. The extent of labour market tightness determines the bargaining strength of employees in wage negotiations with firms, and subsequently the negotiated wage. This project aims to establish the relationship between the wage growth rate and the unemployment and job vacancy rate. This is done by studying the relationship between the job vacancy ratio and real wage growth for the UK, before the analysis is broken down into different UK sectors. The sectors were chosen to capture a diverse set of industries.</p>
         
         <h3>Relationship Between Job Vacancy Rate and Real Wage Growth, UK.</h3>
-        <p>Content TBC.</p>
+        <p></p>
         <div class="chart" id="Chart1"></div>
 
         <h3>Real Wage Growth UK</h3>
-        <p>Content TBC.</p>
+        <p></p>
         <div class="chart" id="Chart2"></div>
 
         <h3>Historical Inflation Rate</h3>
-        <p>Content TBC.</p>
+        <p></p>
         <div class="chart" id="Chart3"></div>
 
         <h3>Historical Unemployment Rate (Seasonally Adjusted)</h3>
-        <p>Content TBC</p>
+        <p></p>
         <div class="chart" id="Chart4"> </div>
 
         <h3>Vacancy Rate by UK Sector</h3>
-        <p>Content TBC</p>
+        <p></p>
         <div class="chart" id="Chart5"> </div>
 
         <h3>Nominal Wage Growth by UK Sector</h3>
-        <p>Content TBC</p>
+        <p></p>
         <div class="chart" id="Chart6"> </div>
+
+        <h3>Data Description</h3>
+        <p>Data for the CPI Inflation (Chart 3) and Unemmployment Rate (Chart 4) was dowloaded from their API links using loops in google Colab. for the other charts, data was also downloaded from their API links. However, instead of directly using the APIs the data values for each year in January were manually typed onto an excel spreadsheet and saved in CSV format. Although Chart 1 analyses real wage growth, this data could not be found for individual sectors, hence nominal growth was used to study the potential influence of bargaining power from vacancy ratio fluctuations. Chart 1 presents data for the UK to achieve a more sophisticated understanding of nationwide trends. The use of APIs is justified because charts 3 and 4 can update automatically. However, APIs were not directly used in the other charts because I wanted to present annual trends given the purpose of the project is to go as far back in time as available in the ONS database. The Covid-19 Pandemic is included as it demonstrates the strength of employee bargaining power during a period that saw record job vacancy ratios.</p>
+
+        <h3>Challenges in Data Analysis and Solutions</h3>
+        <p>One challenge was compiling the data from the APIs onto the excel spreadsheet. Time has to be spent manually aligning the different variables and their correpsonding values. for all charts except 3 and 4. Issues related to coding errors on Vega-lite were resolved using online tutorials and the Vega documentation. One problem with chart 2 was the data selector not being responsive.Therefore, the plan to have a selector to focus on a particular period was abandoned and instead, a tooltip was used that moves along the series as I hover.</p>
+
+        <h3>Conclusion Part 1: Key results and Final Conclusions UK Trends</h3>
+        <p>The real wage is defined as the nominal wage minus the product of nominal wage and inflaition rate. The job vancacy ratio does appear to be correlated with Real Wage growth. The latter plummeted from 4.8% in 2007 to -4% by 2009, with the Job Vacancy Ratio simultaneously decreasing by 29%. Post financial crisis, there appears to be a positive relationship between the two variables until the pandemic commenced, with real wage growth improving by 2.3 percentage points and the vacancy ratio increasing from 1.7 to 2.7 per 100 employee jobs from 2010-2020. This is suggestive of improvements to employee bargaining power, however there were considerable fluctuations to real wage growth in this period. The vacancy rate appeared unresponsive here. What is especailly interesting about the pandemic is the vacancy rate reaching a record 4.1, although real wage growth plummeted by 3.4 percentage points in 2022. Given inflation reached a record 10% in 2022Q3, the real wage growth could be attributed to diminishing employee purchasing power. Post-financial crisis, the unemployment rate fell dramtically, halving between 2010Q1 and 2020Q1. This trend suggests bargaining power improved because frictional unemployment is more likely to be lower. What is less clear is how real wage growth still increases between 2020-2021 despite unemployment increasing to 5.2% by 2020Q4.</p>
+
+        <h3>Conclusion Part 2: Trends for UK sectors</h3>
+        <p>Nominal wage growth and vacancy rate trends for construction adheres to classical economic theory. Here, there is a time gap between vacancy ratio chnages and wage growth. Between 2007-2008, the vacancy ratio fell by 62.5% and wage growth stagnated between 2011-2013 with average growth of -0.7%. Wholesailing recorded fluctuations in wage growth, even though vacancy ratios were less volatile pre-pandemic. Regarding Finance, the period 2004-2007 sees consistent high wage growth averaging 6.1%, whereas the period 2012-2015 sees growth stagnate at -0.6%. Whilst the vacancy ratio does increase from 3.1-3.7/100 in the former period, vacancy growth is unexpectadly higher in the latter period.</p>
+
+        <h3>Key Project Takeaways</h3>
+        <p>Without increasing the sample of sectors, it is difficult to analyse the strength of employee bargaining power for all sectors. Further, the research only covers the UK, hence further work in the same sectors for other developed countries would be required to study differences in the relationship between vacancy ratio and wage growth. Data used for the UK as a whole indicates that increases in vacancy rates does lead to wage growth increases, suggesting evidence that employees can leverage greater bargaining power to negotiate wage increases. When there are more job vacancies available, employees are confident of finding employment elsewhere. Data for individual sectors doesn't always adhere to classical economic theory. Some sectors record a time lag, whereas there is no clear observable relationship for others.</p>
+
     </div> 
 </body>
 

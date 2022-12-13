@@ -14,7 +14,7 @@
         },
     
     "transform": [
-        {"fold":["Services", "Finance", "Public_sector_excluding_finance", "Manufacturing", "Construction", "Wholesailing"], "as": ["country", "GDP"]}
+        {"fold":["Services", "Finance", "Manufacturing", "Construction", "Wholesailing"], "as": ["country", "GDP"]}
         ],
           
     "height": 150,
