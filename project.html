@@ -31,28 +31,25 @@
         <p>Many economists believe wage growth is positively correlated with the job vacancy ratio and negatively correlated with unemployment rate. The extent of labour market tightness determines the bargaining strength of employees in wage negotiations with firms, and subsequently the negotiated wage. I want to investigate the extent to which this widely-accepted theory holds. I establish the relationship between wage growth and the unemployment and job vacancy rate by studying the relationship between the job vacancy ratio and real wage growth for the UK, before analysing different UK sectors.</p>
         
         <h3>Relationship Between Job Vacancy Rate and Real Wage Growth, UK.</h3>
-        <p></p>
+        <p>colab 1: https://colab.research.google.com/drive/1dxt0fg0LAFMR18Dq_932xlTewoBRsB46?usp=sharing
+           colab 2: https://colab.research.google.com/drive/1CwFALKbWMKExjfHqx905hDOHrLUXqnhG?usp=sharing</p>
         <div class="chart" id="Chart1"></div>
 
-        <h3>Real Wage Growth UK</h3>
-        <p></p>
+        <h3>Historical Inflation</h3>
+        <p>Colab 3: https://colab.research.google.com/drive/1I2dC6ULATH55QUmwaIbAk0mTnqyJxPKj?usp=share_link</p>
         <div class="chart" id="Chart2"></div>
 
-        <h3>Historical Inflation</h3>
-        <p></p>
-        <div class="chart" id="Chart3"></div>
-
         <h3>Historical Unemployment</h3>
-        <p></p>
-        <div class="chart" id="Chart4"> </div>
+        <p>Colab 4: https://colab.research.google.com/drive/1runHYAiftbSqwPZj7ie2au7R_sUDg8aK?usp=sharing</p>
+        <div class="chart" id="Chart3"> </div>
 
         <h3>Vacancy Rate by UK Sector</h3>
-        <p></p>
-        <div class="chart" id="Chart5"> </div>
+        <p>Colab 5: https://colab.research.google.com/drive/1bjwMBPYcUlUI7LLyIbnsw_he3rR8TtpF?usp=sharing</p>
+        <div class="chart" id="Chart4"> </div>
 
         <h3>Nominal Wage Growth by UK Sector</h3>
-        <p></p>
-        <div class="chart" id="Chart6"> </div>
+        <p>Colab 6: https://colab.research.google.com/drive/1fUv9YPaqwtTxFCrXyhDKHcdPAYjqYXYC?usp=sharing</p>
+        <div class="chart" id="Chart5"> </div>
 
         <h3>Data Description</h3>
         <p>Inflation (Chart 3) and Unemployment (Chart 4) data was dowloaded from their API links using loops in Google Colab. For other charts, data was also downloaded from their API links. However, instead of directly using the APIs the data values for each year in January were manually typed onto excel and saved in CSV format. Although Chart 1 analyses real wage growth, this data couldn't be found for individual sectors, hence nominal growth was used to study the influence of bargaining power from vacancy ratio fluctuations. The use of APIs is justified because charts 3 and 4 can update automatically. However, APIs were not directly used in the other charts because I wanted to present annual trends given the purpose of the project is to go as far back in time as available in the ONS database. The Covid-19 Pandemic is included as it demonstrates the strength of employee bargaining power during a period that saw record job vacancy ratios. All data was uploaded onto my GitHub account with the naem "project" included in each relevant json file for clarity. The data source is the ONS.</p>
@@ -76,11 +73,10 @@
 <script>
     //Define charts:
     var mychart1 = "project_headline1_chart_project.json";
-    var mychart2 = "project_realwage.json";
-    var mychart3 = "project_CPI_inflation_portfolio.json";
-    var mychart4 = "Unemployment_project.json";
-    var mychart5 = "project_vacancies_trellis.json";
-    var mychart6 = "project_wages1_trellis.json";
+    var mychart2 = "project_CPI_inflation_portfolio.json";
+    var mychart3 = "Unemployment_project.json";
+    var mychart4 = "project_vacancies_trellis.json";
+    var mychart5 = "project_wages1_trellis.json";
 
 
      // Embed charts:
@@ -89,7 +85,6 @@
      vegaEmbed('#Chart3', mychart3);
      vegaEmbed('#Chart4', mychart4);
      vegaEmbed('#Chart5', mychart5);
-     vegaEmbed('#Chart6', mychart6);
      
 
 </script>
