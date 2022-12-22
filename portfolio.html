@@ -47,29 +47,37 @@
         <p>The week 3 chart tracks the UK's GDP Per Capita between 1960-2021. It's better to use a line chart than a bar chart as I have temporal data on x-axis so I changed mark type to line.</p>
         <div class="chart" id="Chart5"> </div>
 
-        <h3>Week 4: GDP Annual Growth Rate</h3>
-        <p>The week 4 chart tracks annual GDP growth from 1960-2020. I chose this site as I am interested in annual GDP growth trends.</p>
+        <h3>Week 3: UK GDP Per Capita</h3>
+        <p>In this chart I changed the visual encoding for the x axis from quantitative to ordinal. The difference is the new chart presents GDP/Capita for all years, which is why I chose it.</p>
         <div class="chart" id="Chart6"> </div>
 
-        <h3>Project prep: Unemployment rates</h3>
-        <p>The theme for week 5 is UK unemployment</p>
+        <h3>Week 4: GDP Annual Growth Rate</h3>
+        <p>The week 4 chart tracks annual GDP growth from 1960-2020. I chose this site as I am interested in annual GDP growth trends.</p>
         <div class="chart" id="Chart7"> </div>
+
+        <h3>Week 5: Unemployment rates</h3>
+        <p>The theme for week 5 is UK unemployment</p>
+        <div class="chart" id="Chart8"> </div>
+
+        <h3>Week 7: Population Map</h3>
+        <p>The map below shows the population for all countires in millions. For example, the UK population is 67 million.</p>
+        <div class="chart" id="Chart9"> </div>
 
         <h3>Week 8: Festival of Economics</h3>
         <p>In the Festival of Economics session on prices and wages, an argument was made that wages and GDP growth are positively correlated. Whilst this is what we expect theoretically, in practise there is a very weak negative correlation between the two variables in the UK between 1999-2021.</p>
-        <div class="chart" id="Chart8"> </div>
+        <div class="chart" id="Chart10"> </div>
 
         <h3>Week 8: Festival of Economics</h3>
         <p>In the Festival of Economics session on prices and wages, an argument was made that inflation and GDP growth are positively correlated. In theoretical economics this is what we expect and we find a positive correlation between the two variables based on UK evidence between 1999-2021.</p>
-        <div class="chart" id="Chart9"> </div>
+        <div class="chart" id="Chart11"> </div>
 
         <h3>Week 9: Bubble chart</h3>
         <p>The bubble chart shows the relationship between income (Nominal GDP per capita) and CO2 emissions per capita.</p>
-        <div class="chart" id="Chart10"> </div>
+        <div class="chart" id="Chart12"> </div>
 
         <h3>Week 9: 2nd Bubble chart</h3>
         <p>The bubble chart shows the relationship between income (Nominal GDP per capita) and healthcare outcomes (life expectancy).</p>
-        <div class="chart" id="Chart11"> </div>
+        <div class="chart" id="Chart13"> </div>
 
     </div> 
 </body>
@@ -82,12 +90,14 @@
     var mychart3 = "data_IMF_creditOutstanding.json";
     var mychart4 = "data_IMF_exchangeRates.json";
     var mychart5 = "week3_GDP.json";
-    var mychart6 = "data_Annual_GDP_Growth.json";
-    var mychart7 = "unemployment_data_ons-LF2Q (6).json";
-    var mychart8 = "GDPgrowth_wages.json";
-    var mychart9 = "Growth_inflation.json";
-    var mychart10 = "income_emissions.json";
-    var mychart11 = "health_income.json";
+    var mychart6 = "week3_GDP2.json";
+    var mychart7 = "data_Annual_GDP_Growth.json";
+    var mychart8 = "unemployment_data_ons-LF2Q (6).json";
+    var mychart9 = "maps_population.json";
+    var mychart10 = "GDPgrowth_wages.json";
+    var mychart11 = "Growth_inflation.json";
+    var mychart12 = "income_emissions.json";
+    var mychart13 = "health_income.json";
 
     
     // Embed charts:
@@ -102,6 +112,8 @@
     vegaEmbed('#Chart9', mychart9);
     vegaEmbed('#Chart10', mychart10);
     vegaEmbed('#Chart11', mychart11);
+    vegaEmbed('#Chart12', mychart12);
+    vegaEmbed('#Chart13', mychart13);
 </script>
 
 </html>
