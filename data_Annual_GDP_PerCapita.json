@@ -1,0 +1,25 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "Annual GDP Growth",
+      "subtitle":"Line graph showing the annual GDP growth rate by year.",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+  "data":{"url": "https://raw.githubusercontent.com/denianomeri/denianomeri.github.io/main/GDP.csv"},
+
+
+  "height": 300,
+  "width": 300,
+
+  "mark": {
+    "type": "line",
+    "color": "#0d09eb"},
+
+  "encoding": {
+    "x": {"field": "level_2", "type": "temporal"}, 
+    "y": {"field": "GDP per capita (current US$)", "type": "quantitative"}
+  }
+}
